@@ -38,3 +38,97 @@
     gap: 24px;
 }
 
+.nav-options li{
+    color: var(--secondary);
+} 
+
+
+/*resonsivo*/
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-line {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* animación X cuando está abierto */
+.burger-line.open:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.burger-line.open:nth-child(2) {
+    opacity: 0;
+}
+.burger-line.open:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── mobile ── */
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;   /* aparece el burger */
+    }
+
+    .mainlogo {
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .logoletters{
+        display: none;
+    }
+
+    .nav-options {
+        display: none;   /* oculta el menú por defecto */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 64px;        /* justo debajo del navbar */
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 12px 0;
+        border-top: 1px solid #eee;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .nav-options{
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+    }
+
+    .nav-options--open {
+        display: flex;   /* se muestra cuando menuOpen es true */
+    }
+
+    .nav-options li {
+        width: 100%;
+        padding: 12px 24px;
+        color: #000;
+    }
+}
+
