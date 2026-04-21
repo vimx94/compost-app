@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --title: 'Roboto-Bold';
+    --subtitle: 'Roboto-Medium';
+    --text: 'Roboto-Regular';
+
+    --primary: #DB968F;
+    --secondary: #FFF9F6;
+}
+
+body{
+    font-family: var(--text);
+    background-color: var(--secondary);
+}
+
+.navbar,
+.footer,
+.section{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.section h2 {
+    /*quitar el flexbox solo para poruebas*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px 15px 5px;
+}
+
+header {
+    background-color: var(--primary);
+}
