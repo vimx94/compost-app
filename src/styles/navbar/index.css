@@ -40,6 +40,7 @@
 
 .nav-options li{
     color: var(--secondary);
+    font-family: var(--tittle);
 } 
 
 
@@ -123,6 +124,7 @@
 
     .nav-options--open {
         display: flex;   /* se muestra cuando menuOpen es true */
+        z-index: 999;
     }
 
     .nav-options li {

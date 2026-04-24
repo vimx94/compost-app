@@ -39,8 +39,12 @@ html {
     --subtitle: 'Roboto-Medium';
     --text: 'Roboto-Regular';
 
-    --primary: #DB968F;
+    --primary: #E5A398;
     --secondary: #FFF9F6;
+    --pinkterra: #C4998A;
+    --terra: #f8b49b;
+    --rosa-palido: #E2B8A8;
+    --crema: #F5EDE8;
 }
 
 body{
@@ -56,16 +60,14 @@ body{
 
 }
 
-.section h2 {
-    /*quitar el flexbox solo para poruebas*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 5px 15px 5px;
-}
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     background-color: var(--primary);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 100%;
+    height: 90px;
 }

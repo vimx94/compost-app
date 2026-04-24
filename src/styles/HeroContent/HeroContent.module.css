@@ -1,0 +1,123 @@
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url('../../assets/backgrounds/backgroungHero.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: var(--primary);
+}
+
+.rule {
+    width: 85px;
+    height: 3px;
+    background: var(--pinkterra);
+    margin-bottom: 1.5rem;
+    opacity: 0.7; 
+}
+
+em{
+    color: var(--terra);
+    line-height: 1.08;
+    font-size: clamp(46px, 6vw, 72px);
+}
+
+.eyebrow{
+    font-size: 25px;
+    color: var(--secondary);
+}
+.btnCta {
+    display: inline-block;
+    padding: 14px 32px;
+    background: transparent;
+    border: 2px solid var(--rosa-palido);
+    color: var(--crema);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btnCta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--pinkterra);
+    transform: translateX(-101%);
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    z-index:0;
+}
+
+.btnCta:hover::before { transform: translateX(0); }
+.btnCta:hover { border-color: var(--rosa-terracota); }
+
+.btnCta span {
+    position: relative;
+    z-index: 1;
+}
+
+/* capa oscura encima de la imagen */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0
+}
+
+/* el contenido queda encima del overlay */
+.content {
+    position: relative;
+    z-index: 1;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding: 3% 8% 3%;
+}
+
+/* Tablet */
+@media (max-width: 1280px) {
+    .hero {
+        background-image: url('../../assets/backgrounds/backgroundHeroTablet.png');
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        /* si tu imagen tiene el sujeto a la izquierda o derecha */
+        background-image: url('../../assets/backgrounds/backgroundHeroMobile.png');
+        background-size: cover;
+        background-position:center;
+
+        /* o si en mobile quieres menos altura */
+        min-height: 80dvh;
+    }
+}

@@ -1,6 +1,7 @@
 // import React from 'react'
-import './App.css'
+import './styles/index.css'
 import Navbar from './components/organisms/Navbar'
+import { HomePage } from './pages/HomePage'
 
 function App() {
   // const [count, setCount] = React.useState(0)
@@ -8,9 +9,9 @@ function App() {
   return (
     <>
     <Navbar/>
-    <section className='section'>
-      <h2>hello world react vite</h2>
-    </section>
+    <main>
+      <HomePage />
+    </main>
     </>
   )
 }
