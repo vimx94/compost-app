@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(() => {
   return {
-    base: mode === 'production' ? '/compost-app/' : '/',
+    base: '/compost-app/',
     plugins: [
       tanstackRouter({
         target: 'react',
