@@ -1,12 +1,15 @@
-import { Outlet } from '@tanstack/react-router'
 import Navbar from '../components/organisms/Navbar'
 
-export function HomeLayout() {
+interface homeLayoutProps {
+  children?: React.ReactNode
+}
+
+export function HomeLayout(props:homeLayoutProps) {
   return (
     <>
       <Navbar />
       <main>
-        <Outlet />
+        {props.children}
       </main>
     </>
   )
