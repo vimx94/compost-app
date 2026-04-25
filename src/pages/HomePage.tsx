@@ -1,12 +1,17 @@
 // src/pages/Home/HomePage.tsx
 import { HeroSection } from '../components/organisms/HeroSection/HeroSection'
+import { HealthCareSection } from '../components/organisms/HealthSection/HealthCare'
 import styles from '../styles/HeroContent/HeroContent.module.css'
+import { CardDataArray } from '../utils/mockHomeData'
+
+
 
 export function HomePage() {
     const handleCtaClick = () => {
     // scroll a siguiente sección, navegar, etc.
         document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth' })
     }
+
 
     return (
         <>
@@ -27,10 +32,10 @@ export function HomePage() {
                 <span className={styles.wordaccent}>movimiento</span> y<br/>
                 bienestar
             </HeroSection>
-
-            <section id="servicios">
-                {/* siguiente sección */}
-            </section>
+            <HealthCareSection
+                headingTitle='Health & Care'
+                cardList={CardDataArray}
+            />
         </>
     )
 }

@@ -1,8 +1,9 @@
 interface ParagraphProps {
-    text: string
+    text?: string
     className?: string
+    children?: string
 }
 
-export const Paragraph = ({text, className}:ParagraphProps) => (
-    <p className={className}>{text}</p>
+export const Paragraph = ({text, className, children}:ParagraphProps) => (
+    <p className={className}>{children ?? text}</p>
 )
