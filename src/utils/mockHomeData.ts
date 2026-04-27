@@ -1,9 +1,12 @@
 
 import type { Icard } from "../components/customTypes/Icard"
 import type { Isections } from "../components/customTypes/Isections"
+
 //avatars
-import defaultAvatar from '../assets/composturaLogos/composturalogoblack.png'
 import avatarEsguince from '../assets/cardavatars/esguinceavatar2026, 22_56_13.png'
+import avatarLumbar from '../assets/cardavatars/lumbar2026, 19_47_02.png'
+import avatarArticulacion  from '../assets/cardavatars/articulacion2026, 19_47_36.png'
+
 //card images
 import esguince from '../assets/cardimages/esguince2026, 22_52_19.png'
 import lumbar from '../assets/cardimages/lumbar2026, 23_04_28.png'
@@ -22,7 +25,7 @@ export const CardDataArray:Icard[] = [
         `
     },
     {
-        avatar: defaultAvatar,
+        avatar: avatarLumbar,
         title: "Dolor Lumbar",
         category: "REHABILITACION",
         imgPath: lumbar,
@@ -34,7 +37,7 @@ export const CardDataArray:Icard[] = [
         `
     },
     {
-        avatar: defaultAvatar,
+        avatar: avatarArticulacion,
         title: "Dolor de manos y articulaciones",
         category: "REHABILITACION",
         imgPath: articulaciones,
