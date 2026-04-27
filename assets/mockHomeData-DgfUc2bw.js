@@ -2,12 +2,12 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
             En Compostura te ayudamos a recuperarte de un esguince de forma segura y 
             efectiva. Disminuye el dolor, mejora tu movilidad y prevén futuras lesiones
             con una valoración personalizada. Agenda tu cita y vuelve a moverte con confianza.
-        `},{avatar:`/compost-app/assets/lumbar2026_%2019_47_02-Dy2n_4rS.png`,title:`Dolor Lumbar`,category:`REHABILITACION`,imgPath:`/compost-app/assets/lumbar2026_%2023_04_28-D2ELkHZs.png`,textInfo:`
+        `},{avatar:`/compost-app/assets/lumbar2026_%2019_47_02-DxZgY-TQ.png`,title:`Dolor Lumbar`,category:`REHABILITACION`,imgPath:`/compost-app/assets/lumbar2026_%2023_04_28-D2ELkHZs.png`,textInfo:`
             En Compostura te ayudamos a aliviar el dolor lumbar desde la raíz, mejorando 
             tu movilidad y reduciendo la tensión en tu día a día. Nuestro enfoque de 
             fisioterapia es personalizado para que recuperes tu bienestar de forma segura 
             y efectiva. Agenda tu valoración y vuelve a moverte sin molestias.
-        `},{avatar:`/compost-app/assets/articulacion2026_%2019_47_36-DyTbCggD.png`,title:`Dolor de manos y articulaciones`,category:`REHABILITACION`,imgPath:`/compost-app/assets/articulaciones2026_%2022_53_45-BMqy1v-i.png`,textInfo:`
+        `},{avatar:`/compost-app/assets/articulacion2026_%2019_47_36-Bq7ct74m.png`,title:`Dolor de manos y articulaciones`,category:`REHABILITACION`,imgPath:`/compost-app/assets/articulaciones2026_%2022_53_45-BMqy1v-i.png`,textInfo:`
             En Compostura te ayudamos a aliviar el dolor en las articulaciones 
             y recuperar tu movilidad con un tratamiento de fisioterapia personalizado. 
             Trabajamos para reducir la inflamación, mejorar tu flexibilidad y prevenir 
