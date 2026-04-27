@@ -1,5 +1,6 @@
 
 import type { Icard } from "../components/customTypes/Icard"
+import type { Isections } from "../components/customTypes/Isections"
 //avatars
 import defaultAvatar from '../assets/composturaLogos/composturalogoblack.png'
 import avatarEsguince from '../assets/cardavatars/esguinceavatar2026, 22_56_13.png'
@@ -45,5 +46,28 @@ export const CardDataArray:Icard[] = [
         `
     }
 ]
+
+// Navigation and Footer Options
+export const listOptions:Isections[] = [
+        {
+            title: 'Inicio'
+        },
+        {
+            title: 'Health & Care'
+        },
+        {
+            title: 'Nuestros Servicios'
+        },
+        {
+            title: 'Contacto'
+        }
+    ]
+
+export const hoursSchedule: [string, string][] = [
+    ["Lun – Vie", "8:00 – 20:00"],
+    ["Sábado", "9:00 – 14:00"],
+    ["Domingo", "Cerrado"],
+];
+
 
 
