@@ -1,12 +1,14 @@
 import { DivContainer } from "../../atoms/common/divContainer/Div"
-import { Avatar } from "../../atoms/common/Avatar/Avatar"
 import { Heading } from "../../atoms/common/heading/heading"
 import { Paragraph } from "../../atoms/common/paragraph/Paragraph"
+import { HeaderLogo } from "../../atoms/navbarAtoms/HeaderLogo"
+import type { IBrand } from "../../customTypes/IBrand"
+
 
 interface FooterBrandProps {
     className?: string | ''
-    classAvatar?: string | ''
-    imgPath: string | ''
+    classBrand?: string | ''
+    brandItems: IBrand[]
     textHeading: string
     children?: React.ReactNode
     headingClass: string | ''
@@ -15,8 +17,8 @@ interface FooterBrandProps {
 
 export const FooterBrand = ({
     className, 
-    classAvatar, 
-    imgPath, 
+    classBrand, 
+    brandItems,
     textHeading, 
     children,
     headingClass,
@@ -26,11 +28,18 @@ export const FooterBrand = ({
         <DivContainer
             className={className}
         >
-            <Avatar 
-                className={classAvatar}
-                imgPath={imgPath}
-                alt="compostura logo"
-            />
+            <DivContainer className={classBrand}>
+                {
+                    brandItems.map((item,index)=>(
+                        <HeaderLogo
+                            key={index} 
+                            className={item.className}
+                            path={item.imgPath}
+                            alt={item.alt} 
+                        />
+                    ))
+                }
+            </DivContainer>
             <Heading
                 className={headingClass}
                 level={2}

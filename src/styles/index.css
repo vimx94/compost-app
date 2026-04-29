@@ -45,7 +45,7 @@ html {
     --terra: #f8b49b;
     --rosa-palido: #E2B8A8;
     --crema: #F5EDE8;
-    --brown: #634949;
+    --brown: #533636da;
 }
 
 body{
@@ -59,6 +59,22 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 
+}
+
+.mainlogo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;  
+}
+
+.logoletters {
+    width: 150px;
+    height: 90px;
+    object-fit: contain;
+}
+
+footer{
+    background-color: var(--brown);
 }
 
 

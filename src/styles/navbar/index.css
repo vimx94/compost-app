@@ -17,7 +17,7 @@
     line-height: 0;   
 }
 
-.mainlogo {
+/* .mainlogo {
     width: 75px;
     height: 75px;
     object-fit: contain;  
@@ -27,7 +27,7 @@
     width: 150px;
     height: 90px;
     object-fit: contain;
-}
+} */
 
 .nav-options {
     list-style: none;

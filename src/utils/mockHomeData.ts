@@ -1,11 +1,15 @@
 
 import type { Icard } from "../components/customTypes/Icard"
+import type { IBrand } from "../components/customTypes/IBrand"
 import type { Isections } from "../components/customTypes/Isections"
+
 
 //avatars
 import avatarEsguince from '../assets/cardavatars/esguinceavatar2026, 22_56_13.png'
 import avatarLumbar from '../assets/cardavatars/lumbar2026, 19_47_02.png'
 import avatarArticulacion  from '../assets/cardavatars/articulacion2026, 19_47_36.png'
+import brandLogo from '../assets/composturaLogos/composturalogowhite.png'
+import brandlogoLetters from '../assets/composturaLogos/composturaletterswhite.png'
 
 //card images
 import esguince from '../assets/cardimages/esguince2026, 22_52_19.png'
@@ -71,6 +75,20 @@ export const hoursSchedule: [string, string][] = [
     ["Sábado", "9:00 – 14:00"],
     ["Domingo", "Cerrado"],
 ];
+
+
+export const brandItems:IBrand[] = [
+    {
+        className: "mainlogo",
+        imgPath:brandLogo,
+        alt:'compostura white'
+    },
+    {
+        className: "logoletters",
+        imgPath:brandlogoLetters,
+        alt:'white letters'
+    }
+]
 
 
 

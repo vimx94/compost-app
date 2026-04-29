@@ -1,10 +1,7 @@
-interface divProps {
-    className? : string | ''
-    children?: React.ReactNode
-}
+interface divProps extends React.HTMLAttributes<HTMLDivElement>{}
 
-export const DivContainer = ({className, children}: divProps) => (
-    <div className={className}>
+export const DivContainer = ({className, children, ...rest}: divProps) => (
+    <div className={className} {...rest}>
         {children}
     </div>
 )

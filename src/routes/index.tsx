@@ -5,6 +5,4 @@ export const Route = createFileRoute('/')({
     component: () => <HomePage/> ,
 })
 
-console.log('INDEX ROUTE LOADED')
-
 

@@ -1,6 +1,7 @@
 // import React from 'react'
 import './styles/index.css'
 import Navbar from './components/organisms/Navbar'
+import Footer from './components/organisms/Footer'
 import { HomePage } from './pages/HomePage'
 
 function App() {
@@ -9,9 +10,10 @@ function App() {
   return (
     <>
     <Navbar/>
-    <main>
-      <HomePage />
-    </main>
+      <main>
+        <HomePage />
+      </main>
+    <Footer/>
     </>
   )
 }
